@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dj-website/static/css/main.8be73408.css",
+    "main.js": "/dj-website/static/js/main.202ddf66.js",
+    "index.html": "/dj-website/index.html",
+    "main.8be73408.css.map": "/dj-website/static/css/main.8be73408.css.map",
+    "main.202ddf66.js.map": "/dj-website/static/js/main.202ddf66.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8be73408.css",
+    "static/js/main.202ddf66.js"
+  ]
+}
