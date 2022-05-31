@@ -18,3 +18,5 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
