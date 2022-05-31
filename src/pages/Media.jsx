@@ -1,11 +1,14 @@
-import React from "react";
+import React, { Component } from "react";
 
-export default function Media(){
-    return (
-        <section id="Media">
-            <p>
-                Media Page
-            </p>
-        </section>
-    )
+class Media extends Component {
+    render() {
+        return (
+            <section id="Media">
+                <p>
+                    Media Page
+                </p>
+            </section>
+        )
+    }
 }
+export default Media;
