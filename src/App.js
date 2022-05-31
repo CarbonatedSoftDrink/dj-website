@@ -8,8 +8,10 @@ import Media from "./components/Media";
 import Suggestions from "./components/Suggestions";
 import Checkout from "./components/Checkout";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 import './App.css';
+
 
 export default function App(){
   return(
@@ -22,6 +24,7 @@ export default function App(){
       <Suggestions />
       <Checkout />
       <Contact />
+      <Footer />
     </main>
   );
 }
