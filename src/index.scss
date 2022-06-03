@@ -1,3 +1,25 @@
+// Media query range by pixels
+// 0 - 600 phone
+// 600 - 900 tablet portrait
+// 900 - 1200 tablet landscape
+// 1200 - 1800 "normal" desktop
+// 1800 + large desktop
+
+@mixin respond($breakpoint){
+  @if $breakpoint == phone{
+      @media (max-width: 600px){@content}    
+  };
+  @if $breakpoint == tab-port{
+      @media (max-width: 900px){@content}
+  };
+  @if $breakpoint == tab-land{
+      @media (max-width: 1200px){@content}    
+  };
+  @if $breakpoint == big-desktop{
+      @media (min-width: 1800px){@content}
+  }
+}
+
 body {
   background-color: #00000000;
 }
