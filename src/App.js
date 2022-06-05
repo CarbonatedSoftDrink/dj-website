@@ -7,7 +7,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Home from './components/Home';
 
-import './App.css';
+import './App.scss';
 
 
 class App extends Component {
