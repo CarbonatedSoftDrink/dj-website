@@ -62,3 +62,94 @@ ul.header li a:hover{
 body {
   background-color: black;
 }
+
+.footer{
+
+  height: auto;
+  background-color: #0E1111;
+
+  &__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__about{
+
+    &-text{
+      max-width: 50%;
+    }
+
+    &-h2{
+      font-size: 2rem;
+      color: #eee;
+      font-weight: 100;
+      letter-spacing: .25rem;
+    }
+
+    &-h3{
+      font-size: 1rem;
+      color: #eee;
+      font-weight: 100;
+    }
+  }
+
+  &__hr{
+    border-bottom: 1px solid grey;
+    width: 90%;
+    padding-bottom: 2rem;
+
+  }
+
+  &__legal{
+    color: grey;
+  }
+
+}
+
+.socials{
+
+  &__list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-inline-start: 0px;
+  }
+
+  &__link{
+    text-decoration: none;
+    color: white;
+    padding: .5rem;
+  }
+
+}
+
+.footer-navigation{
+
+  &__list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-inline-start: 0px;
+  }
+
+  &__item{
+    text-decoration: none;
+    border-right: 1px solid #eee;
+    padding: .5rem;
+    &:last-of-type{
+      border-right: none;
+    }
+  }
+
+  &__link{
+    text-decoration: none;
+    color: #eee;
+    padding: .5rem;
+  }
+
+}
