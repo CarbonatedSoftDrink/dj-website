@@ -1,5 +1,4 @@
 import React from "react";
-import { Route, Routes, NavLink, HashRouter } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -26,10 +25,10 @@ export default function Footer() {
         </ul>
 
         <ul className="footer-navigation__list" >
-            <li className="footer-navigation__item"><a href="#" className="footer-navigation__link">HOME</a></li>
-            <li className="footer-navigation__item"><a href="#" className="footer-navigation__link">SERVICES</a></li>
-            <li className="footer-navigation__item"><a href="#" className="footer-navigation__link">MEDIA</a></li>
-            <li className="footer-navigation__item"><a href="#" className="footer-navigation__link">CONTACT</a></li>
+            <li className="footer-navigation__item"><a href="#/" className="footer-navigation__link">HOME</a></li>
+            <li className="footer-navigation__item"><a href="/#/services" className="footer-navigation__link">SERVICES</a></li>
+            <li className="footer-navigation__item"><a href="/#/media" className="footer-navigation__link">MEDIA</a></li>
+            <li className="footer-navigation__item"><a href="/#/contact" className="footer-navigation__link">CONTACT</a></li>
         </ul>
 
         <div className="footer__hr" />
