@@ -118,12 +118,27 @@ body {
     display: flex;
     align-items: center;
     padding-inline-start: 0px;
+
+    &-item{
+      &:hover .socials__icon{
+        color: #F000EF;
+        transform: scale(1.1);
+
+      }  
+    }
   }
 
   &__link{
     text-decoration: none;
     color: white;
-    padding: .5rem;
+    padding: 1rem;
+  }
+
+  &__icon{
+    font-size: 2rem;
+    color: white;
+    transition: all .25s;
+
   }
 
 }
