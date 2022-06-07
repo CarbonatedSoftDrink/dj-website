@@ -1,0 +1,64 @@
+// Media query range by pixels
+// 0 - 600 phone
+// 600 - 900 tablet portrait
+// 900 - 1200 tablet landscape
+// 1200 - 1800 "normal" desktop
+// 1800 + large desktop
+
+@mixin respond($breakpoint){
+  @if $breakpoint == phone{
+      @media (max-width: 600px){@content}    
+  };
+  @if $breakpoint == tab-port{
+      @media (max-width: 900px){@content}
+  };
+  @if $breakpoint == tab-land{
+      @media (max-width: 1200px){@content}    
+  };
+  @if $breakpoint == big-desktop{
+      @media (min-width: 1800px){@content}
+  }
+}
+
+body {
+  background-color: #00000000;
+}
+h1, h2, p, ul, li {
+  font-family: sans-serif;
+  color: #FFF
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color: #000;
+  padding: 0;
+}
+ul.header li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+.content {
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+
+ul.header li a:hover{
+  color:  #F000EF;
+}
+
+body {
+  background-color: black;
+}
