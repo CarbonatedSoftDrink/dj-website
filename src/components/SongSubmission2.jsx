@@ -16,6 +16,7 @@ export default function SongSubmission2(){
                 value={textItem}
                 onChange={(e) => setItem(e.target.value)}
                 />
+                <input type="submit" value="Submit"></input>
             </label>
         </form>
         </section>
