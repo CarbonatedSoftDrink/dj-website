@@ -6,7 +6,6 @@ class Home extends Component {
         return (
             <div>
                 <h2>HOME PAGE</h2>
-                <SongSubmission2 /> {/* This line must be deleted before merging into main branch. */}
             </div>
         );
     }
