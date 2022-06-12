@@ -1,20 +1,50 @@
 import React from "react";
+import { FaFileImage } from "react-icons/fa";
 
 export default function Services(){
     return (
         <body>
             <section id="Services">
-                <h2>Services</h2>
-                <h3>What we offer!</h3>
-                <ul>
-                    <li>DJ Services (We Travel Anywhere)</li>
-                    <li>Wireless Microphones</li>
-                    <li>DJ Rentals/Speaker Rentals</li>
-                    <li>Dry Ice</li>
-                    <li>Fireworks (Cold Sparklers)</li>
-                    <li>Lighting</li>
-                    <li>Custom Bogos</li>
-                </ul>
+                <div class="container">
+                <h1>Services</h1>
+                <div class="row justify-content-center">
+                    <div class="service-item col-lg-4 col-md-6" >
+                        <i className="services-img"><FaFileImage /></i>
+                        <h3>DJ Services</h3>
+                        <p>We travel anywhere!</p>
+                    </div>
+                    <div class="service-item col-lg-4 col-md-6" >
+                        <i className="services-img"><FaFileImage /></i>
+                        <h3>Wireless Microphones</h3>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div class="service-item col-lg-4 col-md-6" >
+                        <i className="services-img"><FaFileImage /></i>
+                        <h3>DJ/Speaker Rentals</h3>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div class="service-item col-lg-4 col-md-6" >
+                        <i className="services-img"><FaFileImage /></i>
+                        <h3>Dry Ice</h3>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div class="service-item col-lg-4 col-md-6" >
+                        <i className="services-img"><FaFileImage /></i>
+                        <h3>Fireworks</h3>
+                        <p>Cold Sparklers</p>
+                    </div>
+                    <div class="service-item col-lg-4 col-md-6" >
+                        <i className="services-img"><FaFileImage /></i>
+                        <h3>Lighting</h3>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div class="service-item col-lg-4 col-md-6" >
+                        <i className="services-img"><FaFileImage /></i>
+                        <h3>Custom Bogos</h3>
+                        <p>Lorem ipsum</p>
+                    </div>
+                </div>
+                </div>
             </section>
 
             <section id="Prices">
