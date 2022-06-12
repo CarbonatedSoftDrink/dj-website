@@ -5,15 +5,18 @@
 // 1200 - 1800 "normal" desktop
 // 1800 + large desktop
 
+/* Bootstrap */
+@import "~bootstrap/scss/bootstrap";
+
 @mixin respond($breakpoint){
   @if $breakpoint == phone{
-      @media (max-width: 600px){@content}    
+      @media (max-width: 600px){@content}
   };
   @if $breakpoint == tab-port{
       @media (max-width: 900px){@content}
   };
   @if $breakpoint == tab-land{
-      @media (max-width: 1200px){@content}    
+      @media (max-width: 1200px){@content}
   };
   @if $breakpoint == big-desktop{
       @media (min-width: 1800px){@content}
@@ -23,7 +26,7 @@
 body {
   background-color: #00000000;
 }
-h1, h2, p, ul, li {
+h1, h2, h3, p, ul, li {
   font-family: sans-serif;
   color: #FFF
 }
@@ -62,6 +65,26 @@ ul.header li a:hover{
 body {
   background-color: black;
 }
+
+/* Services Styling */
+.service-item {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.container {
+  text-align: center;
+}
+
+.container h1 {
+  margin-bottom: 1.5em;
+}
+
+.services-img {
+  font-size: 5em;
+}
+
+/* End of Services Styling */
 
 .footer{
 
@@ -124,7 +147,7 @@ body {
         color: #F000EF;
         transform: scale(1.1);
 
-      }  
+      }
     }
   }
 
