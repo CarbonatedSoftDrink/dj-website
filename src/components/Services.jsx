@@ -35,8 +35,8 @@ export default function Services(){
                     </div>
                     <div class="service-item col-lg-4 col-md-6" >
                         <i className="services-img"><FaFileImage /></i>
-                        <h3>Wireless Microphones</h3>
-                        <p>Lighting</p>
+                        <h3>Lighting</h3>
+                        <p>Lorem ipsum</p>
                     </div>
                     <div class="service-item col-lg-4 col-md-6" >
                         <i className="services-img"><FaFileImage /></i>
