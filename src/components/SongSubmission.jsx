@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from 'react';
 
-export default function SongSubmission2(){
+export default function SongSubmission(){
     const [textItem, setItem] = useState("");
 
     return (
