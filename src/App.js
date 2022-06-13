@@ -6,6 +6,7 @@ import Media from './components/Media';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Home from './components/Home';
+import Songs from './components/SongSubmission'
 
 import './App.scss';
 
@@ -22,12 +23,14 @@ class App extends Component {
               <li><NavLink to="/services">Services</NavLink></li>
               <li><NavLink to="/media">Media</NavLink></li>
               <li><NavLink to="/contact">Contact</NavLink></li>
+              <li><NavLink to="/songs">Song Suggestions</NavLink></li>
             </ul>
             <div className="content">
               <Routes>
                 <Route path="/" element={<Home />}/>
                 <Route path="/services" element={<Services />}/>
                 <Route path="/media" element={<Media />}/>
+                <Route path="/songs" element={<Songs /> }/>
                 <Route path="/contact" element={<Contact />}/>
               </Routes>
             </div>

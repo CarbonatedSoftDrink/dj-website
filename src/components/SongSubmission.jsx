@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from 'react';
+import Calendar from './Calendar';
 
 export default function SongSubmission(){
     const [textItem, setItem] = useState("");
@@ -12,6 +13,13 @@ export default function SongSubmission(){
         <form>
             <label>Enter your submission:
                 <input
+                type="text" ß
+                value={textItem}
+                onChange={(e) => setItem(e.target.value)}
+                />
+
+                Enter your Parties Name:
+                <input
                 type="text" 
                 value={textItem}
                 onChange={(e) => setItem(e.target.value)}
@@ -19,6 +27,7 @@ export default function SongSubmission(){
                 <input type="submit" value="Submit"></input>
             </label>
         </form>
+        <Calendar />
         </section>
     )
 }
