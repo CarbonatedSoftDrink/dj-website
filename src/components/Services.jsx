@@ -4,7 +4,7 @@ import { FaFileImage } from "react-icons/fa";
 export default function Services(){
     return (
         <body>
-            <section id="Services">
+            <section id="services">
                 <div class="container">
                 <h1>Services</h1>
                 <div class="row justify-content-center">

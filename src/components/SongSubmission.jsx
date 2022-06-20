@@ -6,7 +6,7 @@ export default function SongSubmission2(){
     const [textItem, setItem] = useState("");
 
     return (
-        <section id="SongSubmission">
+        <section id="suggest">
             <p>
                 Song Submission
             </p>
