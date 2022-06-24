@@ -182,11 +182,45 @@ body {
   font-size: 5em;
 }
 
-label {
-  color: #76EB00;
+/* End of Services Styling */
+
+/* Song Submission Form Styling */
+
+#suggest {
+  margin-top: 1.5em;
+
+  background: linear-gradient(#4671EA, #AC34E7);
+
+    /*
+  background: linear-gradient(
+    to bottom right,
+    #FF48B6, #FF7E6C);
+    */
 }
 
-/* End of Services Styling */
+#song-submission-form {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: left;
+
+    /*background: linear-gradient(
+      to bottom right,
+      #DD95F7 0%, #9AADF9 50%, #7FC9D9 100%);*/
+}
+
+.song-submission {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.form-label {
+  color: white;
+}
+
+/* End of Song Submission Form Styling */
 
 .footer{
 
