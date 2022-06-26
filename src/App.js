@@ -17,8 +17,8 @@ class App extends Component {
         <Home />
         <Services />
         <Media />
-        <Contact />
         <Suggestions />
+        <Contact />
         <Footer />
       </>
     );
