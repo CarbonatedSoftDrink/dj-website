@@ -4,8 +4,7 @@
 // 900 - 1200 tablet landscape
 // 1200 - 1800 "normal" desktop
 // 1800 + large desktop
-
-/* Bootstrap */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;800&display=swap');
 @import "~bootstrap/scss/bootstrap";
 
 
@@ -54,7 +53,8 @@ header .banner {
 
 header .banner-text { width: 100%; }
 header .banner-text h1 {
-   font: 90px/1.1em 'opensans-bold', sans-serif;
+   font: 150px 'Inconsolata';
+   font-weight: 800;
    color: #fff;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
@@ -73,15 +73,17 @@ header .banner-text h1 {
 
 /* nav-wrap */
 #nav-wrap {
-   font: 12px 'opensans-bold', sans-serif;
-   width: 100%;
+   font: 14px 'Inconsolata';
+   font-weight: bold;
    text-transform: uppercase;
-   letter-spacing: 2.5px;
+   width: 100%;
+   letter-spacing: 3px;
    margin: 0 auto;
    z-index: 100;
    position: fixed;
    left: 0;
    top: 0;
+   background-color: black;
 }
 .opaque { background-color: #333; }
 
@@ -103,12 +105,11 @@ ul#nav li {
 }
 
 ul#nav li a {
-
    display: inline-block;
    padding: 8px 13px;
    line-height: 32px;
-	text-decoration: none;
-   text-align: left;
+	 text-decoration: none;
+   text-align: center;
    color: #fff;
 
 	-webkit-transition: color .2s ease-in-out;
@@ -125,7 +126,7 @@ body {
   background-color: #00000000;
 }
 h1, h2, h3, p, ul, li {
-  font-family: 'Major Mono Display', monospace;
+  font-family: 'Inconsolata';
   color: #FFF
 }
 ul.header li {
@@ -159,6 +160,15 @@ ul.header li a {
 ul.header li a:hover{
   color:  #F000EF;
 }
+
+
+#contact, #services, #suggest {
+  position: relative;
+  height: 800px;
+  min-height: 500px;
+  width: 100%;
+}
+
 
 body {
   background-color: black;
@@ -327,3 +337,4 @@ body {
   }
 
 }
+
