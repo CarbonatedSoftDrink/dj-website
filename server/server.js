@@ -1,5 +1,5 @@
 const express = require("express");
-
+// const db = require("./config/db");
 require("dotenv").config();
 
 // Port set in .env
@@ -18,17 +18,14 @@ app.use((req, res, next) => {
   next();
 });
 
-
 app.get("/", (req, res) => {
   res.json({ message: "Testing...." });
 });
 
-// import route example*
-const packageRoutes = require("./routes/package-routes");
-
-// use route example*
-app.use("/api/packages", packageRoutes)
+// import & use routes
+app.use("/api/packages", require("./routes/packages-routes"));
 // ^^ any request that starts with http://localhost:5000/api/packages ... 
+app.use("/api/services", require("./routes/services-routes"));
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
