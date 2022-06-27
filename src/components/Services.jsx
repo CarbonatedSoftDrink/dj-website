@@ -60,7 +60,88 @@ export default function Services(){
             </section>
 
             <section id="Packages">
-                <h2>Packages/Deals</h2>
+            <div class="container packages">
+                    <h1>Packages/Deals</h1>
+                    <div class="row">
+                        
+                        {/*Package 1*/}
+                        <div class="col-lg-4">
+                            <div class="card mb-5 mb-lg-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-muted text-uppercase text-center">DJ Package 1</h5>
+                                    <h6 class="card-price text-center">$</h6>
+                                    <hr></hr>
+                                    <ul class="">
+                                    <li><span class=""><i class=""></i></span>Service Item 1</li>
+                                    <li><span class=""><i class=""></i></span>Service Item 2</li>
+                                    <li><span class=""><i class=""></i></span>Service Item 3</li>
+                                    <li><span class=""><i class=""></i></span>Service Item 4</li>
+                                    <li class="text-muted"><span class=""><i class=""></i></span>Service Item 5</li>
+                                    <li class="text-muted"><span class=""><i class=""></i></span>Service Item 6</li>
+                                    <li class="text-muted"><span class=""><i class=""></i></span>Service Item 7</li>
+                                    <li class="text-muted"><span class=""><i class=""></i></span>Service Item 8</li>
+                                    </ul>
+                                    <div class="d-grid">
+                                        <a href="#" class="btn btn-primary text-uppercase">Button</a>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        
+                        {/*Package 2*/}
+                        <div class="col-lg-4">
+                            <div class="card mb-5 mb-lg-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-muted text-uppercase text-center">DJ Package 2</h5>
+                                    <h6 class="card-price text-center">$</h6>
+                                    <hr></hr>
+                                    <ul class="">
+                                    <li><span class=""><i class=""></i></span>Service Item 1</li>
+                                    <li><span class=""><i class=""></i></span>Service Item 2</li>
+                                    <li><span class=""><i class=""></i></span>Service Item 3</li>
+                                    <li><span class=""><i class=""></i></span>Service Item 4</li>
+                                    <li class=""><span class=""><i class=""></i></span>Service Item 5</li>
+                                    <li class=""><span class=""><i class=""></i></span>Service Item 6</li>
+                                    <li class="text-muted"><span class=""><i class=""></i></span>Service Item 7</li>
+                                    <li class="text-muted"><span class=""><i class=""></i></span>Service Item 8</li>
+                                    </ul>
+                                    <div class="d-grid">
+                                        <a href="#" class="btn btn-primary text-uppercase">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                        {/*Package 3*/}
+                        <div class="col-lg-4">
+                            <div class="card mb-5 mb-lg-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-muted text-uppercase text-center">DJ Package 3</h5>
+                                    <h6 class="card-price text-center">$</h6>
+                                    <hr></hr>
+                                    <ul class="">
+                                    <li><span class=""><i class=""></i></span>Service Item 1</li>
+                                    <li><span class=""><i class=""></i></span>Service Item 2</li>
+                                    <li><span class=""><i class=""></i></span>Service Item 3</li>
+                                    <li><span class=""><i class=""></i></span>Service Item 4</li>
+                                    <li class=""><span class=""><i class=""></i></span>Service Item 5</li>
+                                    <li class=""><span class=""><i class=""></i></span>Service Item 6</li>
+                                    <li class=""><span class=""><i class=""></i></span>Service Item 7</li>
+                                    <li class=""><span class=""><i class=""></i></span>Service Item 8</li>
+                                    </ul>
+                                    <div class="d-grid">
+                                        <a href="#" class="btn btn-primary text-uppercase">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <br></br><br></br>
+                <p>Package/Deal Notes from Client:</p>
                 <p>Dry Ice & 4 Fireworks: $600</p>
                 <p>Dry Ice & DJ: $600</p>
                 <p>DJ Package 1: DJ, Dry Ice, 4 Fireworks, and Lights on Dance Floor: $1,250</p>
