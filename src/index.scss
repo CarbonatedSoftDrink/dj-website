@@ -194,6 +194,82 @@ body {
 
 /* End of Services Styling */
 
+/* Packages/Deals Styling */ 
+
+#Packages {
+  background: linear-gradient(#4671EA, #AC34E7);
+}
+
+/*#Packages .pricing {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}*/
+
+#Packages .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+#Packages hr {
+  margin: 1.5rem 0;
+}
+
+#Packages .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+#Packages .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#Packages .card-price .period {
+  font-size: 0.8rem;
+}
+
+#Packages ul li {
+  margin-bottom: 1rem;
+  color: black;
+  padding: 0;
+  border: none;
+}
+
+#Packages .text-muted {
+  opacity: 0.7;
+}
+
+#Packages .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  #Packages .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+
+  #Packages .card:hover .btn {
+    opacity: 1;
+  }
+}
+
+/* End of Packages/Deals Styling */ 
+
+
 /* Song Submission Form Styling */
 
 #suggest {
