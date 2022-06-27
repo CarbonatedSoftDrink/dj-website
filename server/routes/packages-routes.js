@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
 
-const packageControllers = require("../controllers/package-controllers");
+const packagesControllers = require("../controllers/packages-controllers");
 
-router.get("/", packageControllers.getAllPackages);
+router.get("/", packagesControllers.getAllPackages);
 // ^^  http://localhost:5000/api/packages followed by nothing else ...
 
 module.exports = router;
