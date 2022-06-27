@@ -6,28 +6,26 @@ export default function SongSubmission(){
     const [textItem, setItem] = useState("");
 
     return (
-        <section id="SongSubmission">
-            <p>
-                Song Submission
-            </p>
-        <form>
-            <label>Enter your submission:
-                <input
-                type="text" ß
-                value={textItem}
-                onChange={(e) => setItem(e.target.value)}
-                />
+        <section id="suggest">
+        <div class="container song-submission">
+          <h1>Song Submissions</h1>
 
-                Enter your Parties Name:
-                <input
-                type="text" 
-                value={textItem}
-                onChange={(e) => setItem(e.target.value)}
-                />
-                <input type="submit" value="Submit"></input>
-            </label>
-        </form>
-        <Calendar />
+          <form id="song-submission-form">
+              <div class="mb-3">
+                  <label for="party-name" class="form-label">Party Name</label>
+                  <input type="text" class="form-control" id="party-name"></input>
+              </div>
+              <div class="mb-3">
+                  <label for="party-date" class="form-label">Party Date</label>
+                  <input type="date" class="form-control" id="party-date"></input>
+              </div>
+              <div class="mb-3">
+                  <label for="song-suggestions" class="form-label">Song Suggestions</label>
+                  <textarea class="form-control" id="song-suggestions"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
         </section>
     )
 }

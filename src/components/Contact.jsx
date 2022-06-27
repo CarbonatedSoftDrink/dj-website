@@ -1,15 +1,11 @@
 import React from "react";
-import SongSubmission from "./SongSubmission";
-import Calendar from "./Calendar";
 
 export default function Contact(){
     return (
-        <section id="Contact">
+        <section id="contact">
             <h1>
                 Contact Us
             </h1>
-            <SongSubmission />
-            <Calendar />
             <p>
                 FADIA DAGHER<br></br>
                 PH: 313-265-7392<br></br>
