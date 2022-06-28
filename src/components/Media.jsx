@@ -4,16 +4,16 @@ import ImageGallery from 'react-image-gallery';
 
 const images = [
   {
-    original: 'https://picsum.photos/id/1018/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1018/250/150/',
+    original: 'https://libreshot.com/wp-content/uploads/2017/03/dancing-people-on-the-party-1536x1101.jpg',
+    thumbnail: 'https://libreshot.com/wp-content/uploads/2017/03/dancing-people-on-the-party-1536x1101.jpg',
   },
   {
-    original: 'https://picsum.photos/id/1015/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1015/250/150/',
+    original: 'http://www.publicdomainpictures.net/pictures/110000/velka/platterspieler-turntable.jpg',
+    thumbnail: 'http://www.publicdomainpictures.net/pictures/110000/velka/platterspieler-turntable.jpg',
   },
   {
-    original: 'https://picsum.photos/id/1019/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1019/250/150/',
+    original: 'https://images.pexels.com/photos/302879/pexels-photo-302879.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    thumbnail: 'https://images.pexels.com/photos/302879/pexels-photo-302879.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
   },
 ];
 
