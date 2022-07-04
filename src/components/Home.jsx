@@ -11,11 +11,11 @@ class Home extends Component {
                     <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
 
                     <ul id="nav" className="nav">
-                        <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
-                        <li><a className="smoothscroll" href="#services">Services</a></li>
-                        <li><a className="smoothscroll" href="#media">Media</a></li>
+                        <li className="current"><a className="smoothscroll" href="#home">Home   </a></li>
+                        <li><a className="smoothscroll" href="#services">Services   </a></li>
+                        <li><a className="smoothscroll" href="#media">Media </a></li>
+                        <li><a className="smoothscroll" href="#suggest">Song Suggestion </a></li>
                         <li><a className="smoothscroll" href="#contact">Contact Us</a></li>
-                        <li><a className="smoothscroll" href="#suggest">Song Suggestion</a></li>
                     </ul>
                 </nav>
 

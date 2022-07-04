@@ -55,7 +55,7 @@ header .banner-text { width: 100%; }
 header .banner-text h1 {
    font: 150px 'Inconsolata';
    font-weight: 800;
-   color: #fff;
+   color: #FFF;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
@@ -67,7 +67,6 @@ header .banner-text h1 {
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
 	 margin: 0;
 	 padding: 0;
-	 border: none;
 	 outline: none;
 }
 
@@ -78,6 +77,9 @@ header .banner-text h1 {
    text-transform: uppercase;
    width: 100%;
    letter-spacing: 3px;
+   border-bottom-style: solid;
+   border-bottom-color:#76eb00;
+   border-bottom-width: 2px;
    margin: 0 auto;
    z-index: 100;
    position: fixed;
@@ -107,7 +109,7 @@ ul#nav li {
 ul#nav li a {
    display: inline-block;
    padding: 8px 13px;
-   line-height: 32px;
+   line-height: 30px;
 	 text-decoration: none;
    text-align: center;
    color: #fff;
@@ -120,7 +122,6 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F000EF; }
 
 body {
   background-color: #00000000;
@@ -157,16 +158,20 @@ ul.header li a {
   margin-bottom: 10px;
 }
 
-ul.header li a:hover{
-  color:  #F000EF;
+ul#nav li a:hover{
+  color: #F000EF;
+}
+ul#nav li a:active{
+  color:#0039e8;
 }
 
 
-#contact, #services, #suggest {
+#contact, #services, #suggest, #Packages {
   position: relative;
   height: 800px;
   min-height: 500px;
   width: 100%;
+  text-align: center;
 }
 
 
@@ -197,7 +202,7 @@ body {
 /* Packages/Deals Styling */ 
 
 #Packages {
-  background: linear-gradient(#4671EA, #AC34E7);
+  background: linear-gradient(#0039e8, #F000EF);
 }
 
 /*#Packages .pricing {
@@ -275,7 +280,7 @@ body {
 #suggest {
   margin-top: 1.5em;
 
-  background: linear-gradient(#4671EA, #AC34E7);
+  background: linear-gradient(#0039e8, #F000EF);
 
     /*
   background: linear-gradient(
@@ -300,6 +305,12 @@ body {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   margin-bottom: 1.5em;
+}
+
+#contact img {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
 }
 
 .form-label {
