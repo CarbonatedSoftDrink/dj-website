@@ -20,6 +20,14 @@ export default function SongSubmission(){
                   <input type="date" class="form-control" id="party-date"></input>
               </div>
               <div class="mb-3">
+                  <label for="person-name" class="form-label">Person Name</label>
+                  <input type="text" class="form-control" id="person-name"></input>
+              </div>
+              <div class="mb-3">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="text" class="form-control" id="phone"></input>
+              </div>
+              <div class="mb-3">
                   <label for="song-suggestions" class="form-label">Song Suggestions</label>
                   <textarea class="form-control" id="song-suggestions"></textarea>
               </div>
