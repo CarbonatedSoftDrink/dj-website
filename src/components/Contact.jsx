@@ -1,4 +1,6 @@
 import React from "react";
+import PayPal from '../pictures/paypal.png';
+import CashApp from '../pictures/cashapp.png';
 
 export default function Contact(){
     return (
@@ -13,9 +15,9 @@ export default function Contact(){
                 <a href='https://www.instagram.com/djfadia'>DJFADIA ON INSTAGRAM</a>
             </p>
             <h1>Make A Deposit</h1>
-            <a href="https://account.venmo.com/pay?txn=pay&note=DJ%20Deposit&recipients=JoeBomm" target="_blank">Venmo</a>
+            <a href="https://account.venmo.com/pay?txn=pay&note=DJ%20Deposit&recipients=JoeBomm" target="_blank"><img src={PayPal}/></a>
             &nbsp;()
-            <a href = "https://cash.app/$joebomm" target="_blank">CashApp</a>
+            <a href = "https://cash.app/$joebomm" target="_blank"><img src={CashApp}/></a>
         </section>
     )
 }
