@@ -52,7 +52,7 @@ export default function Services() {
         </div>
       </section>
 
-      <section id="Prices">
+      {/*<section id="Prices">
         <h2>Prices</h2>
         <p>DJ Only: $400.00 - $750.00 * May vary by location</p>
         <p>
@@ -65,7 +65,7 @@ export default function Services() {
           <p>*Small System</p>
           <p>*Large System</p>
         </p>
-      </section>
+            </section>*/}
 
       <section id="Packages">
         <div class="container packages">
@@ -276,7 +276,7 @@ export default function Services() {
             </div>
           </div>
         </div>
-        <br></br>
+        {/*<br></br>
         <br></br>
         <p>Package/Deal Notes from Client:</p>
         <p>Dry Ice & 4 Fireworks: $600</p>
@@ -291,7 +291,7 @@ export default function Services() {
         </p>
         <p>
           You get two free fireworks with DJ Package 1 Deal! Save around $200
-        </p>
+        </p>*/}
       </section>
     </body>
   );
