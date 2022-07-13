@@ -1,7 +1,7 @@
 {
   "name": "personal-site",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@sanity/client": "^3.3.2",
