@@ -10,27 +10,12 @@ export default function Services() {
 
   useEffect(() => {
     const servicesQuery = '*[_type == "services"]';
-    const packagesQuery = '*[_type == "packages"]';
 
-    const fetchServicesData = async () => {
-      try {
-        const data = await client.fetch(servicesQuery);
-        setServices(data);
-      } catch (err) {
-        console.log(err);
-      }
-    };
+    client.fetch(servicesQuery).then((data) => {
+      setServices(data);
+    })
 
-    const fetchPackagesData = async () => {
-      try {
-        const data = await client.fetch(packagesQuery);
-        setPackages(data);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    fetchServicesData();
-    fetchPackagesData();
+
   }, []);
 
   return (
