@@ -29,6 +29,8 @@ export default function Services() {
         console.log(err);
       }
     };
+    fetchServicesData();
+    fetchPackagesData();
   }, []);
 
   return (
