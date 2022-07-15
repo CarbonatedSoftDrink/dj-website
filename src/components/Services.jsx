@@ -37,17 +37,19 @@ export default function Services() {
     <body>
       <section id="services">
         <div class="container">
-          <h1>Services</h1>
-          <div class="row justify-content-center">
-            {services?.map((service, index) => (
-              <div class="service-item col-lg-4 col-md-6">
-                <i className="services-img">
-                  <FaFileImage />
-                </i>
-                <h3>{service.service}</h3>
-                <p>{service.description}</p>
-              </div>
-            ))}
+          <div class="container-fluid">
+            <h1>Services</h1>
+            <div class="row justify-content-center">
+              {services?.map((service, index) => (
+                <div class="service-item card col-lg-4 col-md-6">
+                  <i className="services-img">
+                    <FaFileImage />
+                  </i>
+                  <h3 id="service-title">{service.service}</h3>
+                  <p id="service-description">{service.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
