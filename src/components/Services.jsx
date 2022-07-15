@@ -8,7 +8,30 @@ export default function Services() {
   const [services, setServices] = useState([]);
   const [packages, setPackages] = useState([]);
 
+  useEffect(() => {
+    const servicesQuery = '*[_type == "services"]';
+    const packagesQuery = '*[_type == "packages"]';
 
+    const fetchServicesData = async () => {
+      try {
+        const data = await client.fetch(servicesQuery);
+        setServices(data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+
+    const fetchPackagesData = async () => {
+      try {
+        const data = await client.fetch(packagesQuery);
+        setPackages(data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    fetchServicesData();
+    fetchPackagesData();
+  }, []);
 
   return (
     <body>
