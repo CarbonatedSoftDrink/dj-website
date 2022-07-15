@@ -1,25 +1,27 @@
-import React from "react";
-import Navbar from "./components/Navbar";
+import React, { Component } from "react";
 
+import Footer from "./components/Footer";
+import Home from "./components/Home";
 import Services from "./components/Services";
-import Prices from "./components/Prices";
-import Packages from "./components/Packages";
+import Contact from "./components/Contact";
 import Media from "./components/Media";
-import Suggestions from "./components/Suggestions";
-import Checkout from "./components/Checkout";
+import Suggestions from "./components/SongSubmission";
 
-import './App.css';
+import "./App.scss";
 
-export default function App(){
-  return(
-    <main>
-      <Navbar />
-      <Services />
-      <Prices />
-      <Packages />
-      <Media />
-      <Suggestions />
-      <Checkout />
-    </main>
-  );
+class App extends Component {
+  render() {
+    return (
+      <>
+        <Home />
+        <Services />
+        <Media />
+        <Suggestions />
+        <Contact />
+        <Footer />
+      </>
+    );
+  }
 }
+
+export default App;
