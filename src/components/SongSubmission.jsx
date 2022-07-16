@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Calendar from './Calendar';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function SongSubmission(){
     const [textItem, setItem] = useState("");
@@ -17,6 +18,8 @@ export default function SongSubmission(){
         }, (error) => {
             console.log(error.text);
         });
+        e.target.reset();
+        toast.success('Form Submitted!', {duration: 8000});
     };
 
     return (
@@ -46,6 +49,7 @@ export default function SongSubmission(){
               </div>
               <button type="submit" class="btn btn-primary" value="Send">Submit</button>
           </form>
+          <Toaster />
         </div>
         </section>
     )
