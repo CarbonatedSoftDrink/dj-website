@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 
-import sanityClient from "../client.js";
+import { client } from "../client";
 import { FaFileImage } from "react-icons/fa";
 
 export default function Services() {
@@ -14,7 +14,7 @@ export default function Services() {
 
     const fetchServicesData = async () => {
       try {
-        const data = await sanityClient.fetch(servicesQuery);
+        const data = await client.fetch(servicesQuery);
         setServices(data);
       } catch (err) {
         console.log(err);
@@ -23,7 +23,7 @@ export default function Services() {
 
     const fetchPackagesData = async () => {
       try {
-        const data = await sanityClient.fetch(packagesQuery);
+        const data = await client.fetch(packagesQuery);
         setPackages(data);
       } catch (err) {
         console.log(err);
