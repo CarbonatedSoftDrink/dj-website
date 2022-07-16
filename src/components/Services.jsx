@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 
-import sanityClient from "../client";
+import sanityClient from "../client.js";
 import { FaFileImage } from "react-icons/fa";
 
 export default function Services() {
