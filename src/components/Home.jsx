@@ -15,7 +15,7 @@ class Home extends Component {
                         <li><a className="smoothscroll" href="#services">Services   </a></li>
                         <li><a className="smoothscroll" href="#media">Media </a></li>
                         <li><a className="smoothscroll" href="#suggest">Song Suggestion </a></li>
-                        <li><a className="smoothscroll" href="#contact">Contact Us</a></li>
+                        <li><a className="smoothscroll" href="#contact">Contact UsHELP</a></li>
                     </ul>
                 </nav>
 
