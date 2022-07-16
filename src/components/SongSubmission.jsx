@@ -12,7 +12,7 @@ export default function SongSubmission(){
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_aemitpg', 'template_nfftx45', form.current, 'NWzIW3yIfx5f7rqWL')
+        emailjs.sendForm('service_bcs8en5', 'template_wy5hueo', form.current, 'wyAHCBsK_pLmlsJnf')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
