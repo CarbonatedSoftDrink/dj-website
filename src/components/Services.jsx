@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { client } from "../client";
 import { FaFileImage } from "react-icons/fa";
 import Prices from "./Prices";
+
 export default function Services() {
   const [services, setServices] = useState([]);
   const [packages, setPackages] = useState([]);
@@ -52,7 +53,7 @@ export default function Services() {
         </div>
       </section>
 
-<Prices />
+      <Prices />
 
       <section id="Packages">
         <div className="container packages">
