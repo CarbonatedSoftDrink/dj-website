@@ -15,9 +15,9 @@ export default function Contact(){
                 <a href='https://www.instagram.com/djfadia'>DJFADIA ON INSTAGRAM</a>
             </p>
             <h1>Make A Deposit</h1>
-            <a href="https://account.venmo.com/pay?txn=pay&note=DJ%20Deposit&recipients=JoeBomm" target="_blank"><img src={PayPal}/></a>
-            
-            <a href = "https://cash.app/$joebomm" target="_blank"><img src={CashApp}/></a>
+            <a href="https://account.venmo.com/pay?txn=pay&note=DJ%20Deposit&recipients={user_name}" target="_blank"><img src={PayPal}/></a>
+
+            <a href = "https://cash.app/${user_name}" target="_blank"><img src={CashApp}/></a>
         </section>
     )
 }
