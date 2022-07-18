@@ -10,7 +10,7 @@ export default function Footer() {
 
       >
         <div className="footer__about-text">
-          <h2 className="footer__about-h2">@First_Last</h2>
+          <h2 className="footer__about-h2">@djfadia</h2>
           <h3 className="footer__about-h3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce augue
             dui, tincidunt ut tempus a, volutpat eget mi. Sed ac mattis metus.

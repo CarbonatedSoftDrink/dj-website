@@ -44,8 +44,11 @@ export default function Services() {
                 <i className="services-img">
                   <FaFileImage />
                 </i>
-                <h3>{service.service}</h3>
-                <p>{service.description}</p>
+                  <h3>{service.service}</h3>
+                <div class="descriptions">
+                  <div class="writing">{service.description}</div>
+                </div>
+
               </div>
             ))}
           </div>

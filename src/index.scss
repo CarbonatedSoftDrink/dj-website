@@ -214,6 +214,35 @@ body {
   font-size: 5em;
 }
 
+.descriptions{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000;
+}
+
+.container:hover .descriptions {
+  opacity: 1;
+}
+
+.writing {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 /* End of Services Styling */
 
 /* Packages/Deals Styling */ 
@@ -289,6 +318,7 @@ body {
   }
 }
 
+
 /* End of Packages/Deals Styling */ 
 
 
@@ -325,9 +355,8 @@ body {
 }
 
 #contact img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50px;
+  width: 400px;
+  height: 400px;
 }
 
 .form-label {
