@@ -16,7 +16,12 @@ export default {
     {
         title: "Icon",
         name: "icon",
-        type: "iconPicker"
-    }
+        type: "iconPicker",
+        options: {
+          outputFormat: 'react',
+          providers: ["fa", "mdi"]
+      }
+    },
+    
   ],
 };
