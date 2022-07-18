@@ -14,7 +14,9 @@ export default function DynamicIcon(props) {
     if (props.iconData.provider === "mdi") {
       Icon = MdIcons[iconName];
     }
-  } else {
+  }
+
+  if (!Icon) {
     Icon = MdIcons["MdMusicNote"];
   }
 
