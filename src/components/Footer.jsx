@@ -20,22 +20,23 @@ export default function Footer() {
 
         <ul className="socials__list" >
             <li className="socials__list-item"><a href="#/" className="socials__link"><i className="socials__icon"><FaInstagram /></i></a></li>
-            <li className="socials__list-item"><a href="#/" className="socials__link"><i className="socials__icon"><FaFacebook /></i></a></li>
-            <li className="socials__list-item"><a href="#/" className="socials__link"><i className="socials__icon"><FaTwitter /></i></a></li>
+            {/* <li className="socials__list-item"><a href="#/" className="socials__link"><i className="socials__icon"><FaFacebook /></i></a></li> */}
+            {/* <li className="socials__list-item"><a href="#/" className="socials__link"><i className="socials__icon"><FaTwitter /></i></a></li> */}
 
         </ul>
-        
+
         <ul className="footer-navigation__list" >
             <li className="footer-navigation__item"><a href="/#home" className="footer-navigation__link">HOME</a></li>
             <li className="footer-navigation__item"><a href="/#services" className="footer-navigation__link">SERVICES</a></li>
             <li className="footer-navigation__item"><a href="/#media" className="footer-navigation__link">MEDIA</a></li>
+            <li className="footer-navigation__item"><a href="/#suggest" className="footer-navigation__link">SONG SUGGESTION</a></li>
             <li className="footer-navigation__item"><a href="/#contact" className="footer-navigation__link">CONTACT</a></li>
         </ul>
 
         <div className="footer__hr" />
 
         <p className="footer__legal">@First_Last. All rights reserved.</p>
-        
+
       </div>
     </section>
   );
