@@ -166,10 +166,27 @@ ul#nav li a:active{
 }
 
 
-#contact, #services, #suggest, #Packages {
+#contact, #suggest, #media {
+  position: relative;
+  //height: 650px;
+  min-height: 200px;
+  padding: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+#services{
+  position: relative;
+  min-height: 500px;
+  padding: 50px;
+  width: 100%;
+  text-align: center;
+}
+#Packages {
   position: relative;
   height: 800px;
   min-height: 500px;
+  padding: 50px;
   width: 100%;
   text-align: center;
 }
@@ -183,6 +200,23 @@ body {
 .service-item {
   text-align: center;
   margin-bottom: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  height: 25em;
+  width: 25em;
+}
+
+#service-title {
+  color: black;
+  font-weight: bold;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+#service-description {
+  color: black;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .container {
@@ -280,7 +314,7 @@ body {
 #suggest {
   margin-top: 1.5em;
 
-  background: linear-gradient(#0039e8, #F000EF);
+  background: linear-gradient(#F000EF, #0039e8);
 
     /*
   background: linear-gradient(
@@ -310,7 +344,7 @@ body {
 #contact img {
   width: 250px;
   height: 250px;
-  border-radius: 5px;
+  border-radius: 50px;
 }
 
 .form-label {

@@ -40,22 +40,26 @@ export default function Services() {
     <body>
       <section id="services">
         <div class="container">
-          <h1>Services</h1>
-          <div class="row justify-content-center">
-            {services?.map((service, index) => (
-              <div className="service-item col-lg-4 col-md-6" key={index}>
-                <i className="services-img">
-                  <DynamicIcon iconData={service.icon ? service.icon : null } />
-                </i>
-                <h3>{service.service}</h3>
-                <p>{service.description}</p>
-              </div>
-            ))}
+
+
+          <div class="container-fluid">
+            <h1>Services</h1>
+            <div class="row justify-content-center">
+              {services?.map((service, index) => (
+                <div class="service-item card col-lg-4 col-md-6" key={index}>
+                  <i className="services-img">
+                   <DynamicIcon iconData={service.icon ? service.icon : null } />
+                  </i>
+                  <h3 id="service-title">{service.service}</h3>
+                  <p id="service-description">{service.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="Prices">
+      {/*<section id="Prices">
         <h2>Prices</h2>
         <p>DJ Only: $400.00 - $750.00 * May vary by location</p>
         <p>
@@ -68,7 +72,7 @@ export default function Services() {
           <p>*Small System</p>
           <p>*Large System</p>
         </p>
-      </section>
+            </section>*/}
 
       <section id="Packages">
         <div class="container packages">
@@ -279,7 +283,7 @@ export default function Services() {
             </div>
           </div>
         </div>
-        <br></br>
+        {/*<br></br>
         <br></br>
         <p>Package/Deal Notes from Client:</p>
         <p>Dry Ice & 4 Fireworks: $600</p>
@@ -294,7 +298,7 @@ export default function Services() {
         </p>
         <p>
           You get two free fireworks with DJ Package 1 Deal! Save around $200
-        </p>
+        </p>*/}
       </section>
     </body>
   );

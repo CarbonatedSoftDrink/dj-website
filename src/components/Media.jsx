@@ -26,9 +26,9 @@ class MyGallery extends React.Component {
 export default function Media(){
     return (
         <section id="media">
-            <p>
-                Media Page
-            </p>
+            <h1>
+                What We Can Do
+            </h1>
             <MyGallery/>
         </section>
     )

@@ -16,7 +16,7 @@ export default function Contact(){
             </p>
             <h1>Make A Deposit</h1>
             <a href="https://account.venmo.com/pay?txn=pay&note=DJ%20Deposit&recipients=JoeBomm" target="_blank"><img src={PayPal}/></a>
-            &nbsp;()
+            
             <a href = "https://cash.app/$joebomm" target="_blank"><img src={CashApp}/></a>
         </section>
     )
