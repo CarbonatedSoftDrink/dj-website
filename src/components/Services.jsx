@@ -3,6 +3,9 @@ import { useEffect, useState } from "react";
 
 import { client } from "../client";
 import { FaFileImage } from "react-icons/fa";
+import DynamicIcon from "./DynamicIcon";
+
+
 
 export default function Services() {
   const [services, setServices] = useState([]);
@@ -31,19 +34,21 @@ export default function Services() {
     };
     fetchServicesData();
     fetchPackagesData();
-  }, []);
+  }, []);  
 
   return (
     <body>
       <section id="services">
         <div class="container">
+
+
           <div class="container-fluid">
             <h1>Services</h1>
             <div class="row justify-content-center">
               {services?.map((service, index) => (
-                <div class="service-item card col-lg-4 col-md-6">
+                <div class="service-item card col-lg-4 col-md-6" key={index}>
                   <i className="services-img">
-                    <FaFileImage />
+                   <DynamicIcon iconData={service.icon ? service.icon : null } />
                   </i>
                   <h3 id="service-title">{service.service}</h3>
                   <p id="service-description">{service.description}</p>
