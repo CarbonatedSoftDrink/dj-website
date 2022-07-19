@@ -62,7 +62,7 @@ export default function Services() {
 
       <section id="Packages">
         <div class="container packages">
-          <h1>Packages/Deals</h1>
+          <h1>Packages/Deals</h1> 
           <div class="row">
             {packages?.map((item, index) => (
               <div class="col-lg-4 package">

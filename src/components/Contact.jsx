@@ -5,19 +5,30 @@ import CashApp from '../pictures/cashapp.png';
 export default function Contact(){
     return (
         <section id="contact">
-            <h1>
-                Contact Us
-            </h1>
-            <p>
-                FADIA DAGHER<br></br>
-                PH: 313-265-7392<br></br>
-                PH: 313-800-1262<br></br>
-                <a href='https://www.instagram.com/djfadia'>DJFADIA ON INSTAGRAM</a>
-            </p>
-            <h1>Make A Deposit</h1>
-            <a href="https://account.venmo.com/pay?txn=pay&note=DJ%20Deposit&recipients={user_name}" target="_blank"><img src={PayPal}/></a>
+            <div class="container">
+                <div class="container-fluid">
+                    <h1>Contact</h1>
+                    <div class="row justify-content-center">
+                        <div class="service-item card col-lg-4 col-md-6">
+                            <h1 id="contact-title">Drop Me a Line</h1>
+                            <h2 id="contact-name">Fadia Dhager</h2>
+                            <h3 id="contact-body">H: 313-265-7392</h3>  
+                            <h3 id="contact-body">M: 313-800-1262</h3>
 
-            <a href = "https://cash.app/${user_name}" target="_blank"><img src={CashApp}/></a>
+                            <a href='https://www.instagram.com/djfadia' class="btn btn-primary text-uppercase">
+                            Check out my Instagram</a>
+                        </div>
+                        <div class="service-item card col-lg-4 col-md-6">
+                            <div class="card-body">
+                                <h1 id="deposit-title">Make a Deposit</h1>
+                                <a href="https://account.venmo.com/pay?txn=pay&note=DJ%20Deposit&recipients={user_name}" target="_blank"><img src={PayPal}/></a>
+                                <a href = "https://cash.app/${user_name}" target="_blank"><img src={CashApp}/></a>
+                                <h3 id="contact-body">Click on the either icon to pay your deposit with PayPal or CashApp</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     )
 }
