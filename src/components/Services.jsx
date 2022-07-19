@@ -40,8 +40,6 @@ export default function Services() {
     <body>
       <section id="services">
         <div class="container">
-
-
           <div class="container-fluid">
             <h1>Services</h1>
             <div class="row justify-content-center">
@@ -76,7 +74,7 @@ export default function Services() {
 
       <section id="Packages">
         <div class="container packages">
-          <h1>Packages/Deals</h1>
+          <h1>Packages/Deals</h1> 
           <div class="row">
             {/*Package 1*/}
             <div class="col-lg-4">
