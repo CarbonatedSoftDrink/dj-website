@@ -200,6 +200,23 @@ body {
 .service-item {
   text-align: center;
   margin-bottom: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  height: 25em;
+  width: 25em;
+}
+
+#service-title {
+  color: black;
+  font-weight: bold;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+#service-description {
+  color: black;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .container {
@@ -296,8 +313,7 @@ body {
 
 #suggest {
   margin-top: 1.5em;
-
-  background: linear-gradient(#0039e8, #F000EF);
+  background: linear-gradient(#F000EF, #0039e8);
 
     /*
   background: linear-gradient(
