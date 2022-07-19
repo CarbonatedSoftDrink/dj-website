@@ -353,6 +353,74 @@ body {
 
 /* End of Song Submission Form Styling */
 
+
+// PACKAGE FORM STYLING:
+
+.package-form-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  // min-height: 80vh;
+  background-color: #212121;
+
+
+}
+
+.package-form-inputs{
+  width: 70%;
+
+}
+
+.package-form{
+  padding: 4rem 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+
+  &__group{
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  &__label{
+    font-family: inherit;
+    color: #AAAAAA;
+  }
+
+
+  &__input{
+    color: #AAAAAA;
+    width: 100%;
+    
+    border: none;
+    border-radius: 4px;
+    font-family: inherit;
+    display: block;
+
+    &:focus{
+      outline: none;
+      border: none;
+    }
+    background: #3d3d3d;
+
+  }
+
+  textarea{
+    height: 8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.packages-modal .modal-content{
+  color: #FAFAFA;
+  background-color: #212121;
+}
+
+
+
 .footer{
 
   height: auto;
