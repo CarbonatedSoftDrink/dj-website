@@ -9,13 +9,10 @@ import { client } from "../client";
 import DynamicIcon from "./DynamicIcon";
 import PackageForm from "./PackageForm";
 
-
-
 export default function Services() {
   const [services, setServices] = useState([]);
   const [packages, setPackages] = useState([]);
   const [showModal, setShowModal] = useState(true);
-  
 
   useEffect(() => {
     const servicesQuery = '*[_type == "services"]';
@@ -59,10 +56,15 @@ export default function Services() {
             closeButton={() => setShowModal(false)}
           >
             <Modal.Title id="contained-modal-title-vcenter">
-              Modal heading
+              Package number..
             </Modal.Title>
           </Modal.Header>
           <ModalBody>
+            <p>
+              All below fields are optional - Please fill out with as
+              much information as possible and we will get back to you as soon
+              as possible!
+            </p>
             <PackageForm
               closeAfterSubmit={() => setShowModal(false)}
             ></PackageForm>
@@ -171,7 +173,10 @@ export default function Services() {
                     </li>
                   </ul>
                   <div class="d-grid">
-                    <a href="#" class="btn btn-primary text-uppercase">
+                    <a
+                      onClick={() => setShowModal(true)}
+                      class="btn btn-primary text-uppercase"
+                    >
                       Button
                     </a>
                   </div>
@@ -240,7 +245,7 @@ export default function Services() {
                   </ul>
                   <div class="d-grid">
                     <a href="#" class="btn btn-primary text-uppercase">
-                      Button
+                      Contact
                     </a>
                   </div>
                 </div>

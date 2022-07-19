@@ -40,7 +40,7 @@ export default function PackageForm(props) {
   const sendForm = async () => {
     try {
       const fetchData = await fetch(
-        "https://formsubmit.co/ajax/dettloffdgmail.com",
+        "https://formsubmit.co/ajax/someemailaddress.com",
         {
           method: "POST",
           headers: {
@@ -86,7 +86,7 @@ export default function PackageForm(props) {
           </div>
 
           <div className="package-form__group">
-            <label className="package-form__label">Estimated Event Size</label>
+            <label className="package-form__label">Estimated Event Size (# of people)</label>
             <input
               className="package-form__input"
               type="number"
