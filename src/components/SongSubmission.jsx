@@ -25,7 +25,7 @@ export default function SongSubmission(){
     return (
         <section id="suggest">
         <div class="container song-submission">
-          <h1>Song Submissions</h1>
+          <h1>Song Suggestions</h1>
           <form id="song-submission-form" ref={form} onSubmit={sendEmail}>
               <div class="mb-3">
                   <label for="party-name" class="form-label">Party Name</label>
