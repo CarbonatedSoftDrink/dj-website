@@ -14,7 +14,7 @@ import PackageForm from "./PackageForm";
 export default function Services() {
   const [services, setServices] = useState([]);
   const [packages, setPackages] = useState([]);
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     const servicesQuery = '*[_type == "services"]';
