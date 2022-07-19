@@ -6,8 +6,6 @@ import { FaFileImage } from "react-icons/fa";
 import DynamicIcon from "./DynamicIcon";
 import Prices from "./Prices";
 
-
-
 export default function Services() {
   const [services, setServices] = useState([]);
   const [packages, setPackages] = useState([]);
@@ -35,21 +33,21 @@ export default function Services() {
     };
     fetchServicesData();
     fetchPackagesData();
-  }, []);  
+  }, []);
 
   return (
     <body>
       <section id="services">
         <div class="container">
-
-
           <div class="container-fluid">
             <h1>Services</h1>
             <div class="row justify-content-center">
               {services?.map((service, index) => (
                 <div class="service-item card col-lg-4 col-md-6" key={index}>
                   <i className="services-img">
-                   <DynamicIcon iconData={service.icon ? service.icon : null } />
+                    <DynamicIcon
+                      iconData={service.icon ? service.icon : null}
+                    />
                   </i>
                   <h3 id="service-title">{service.service}</h3>
                   <p id="service-description">{service.description}</p>
@@ -66,209 +64,36 @@ export default function Services() {
         <div class="container packages">
           <h1>Packages/Deals</h1>
           <div class="row">
-            {/*Package 1*/}
-            <div class="col-lg-4">
-              <div class="card mb-5 mb-lg-0">
-                <div class="card-body">
-                  <h5 class="card-title text-muted text-uppercase text-center">
-                    DJ Package 1
-                  </h5>
-                  <h6 class="card-price text-center">$</h6>
-                  <hr></hr>
-                  <ul class="">
-                    <li>
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 1
-                    </li>
-                    <li>
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 2
-                    </li>
-                    <li>
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 3
-                    </li>
-                    <li>
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 4
-                    </li>
-                    <li class="text-muted">
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 5
-                    </li>
-                    <li class="text-muted">
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 6
-                    </li>
-                    <li class="text-muted">
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 7
-                    </li>
-                    <li class="text-muted">
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 8
-                    </li>
-                  </ul>
-                  <div class="d-grid">
-                    <a href="#" class="btn btn-primary text-uppercase">
-                      Button
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {packages?.map((item, index) => (
+              <div class="col-lg-4 package">
+                <div class="card mb-5 mb-lg-0">
+                  <div class="card-body">
+                    <h5 class="card-title text-muted text-uppercase text-center">
+                      {item.package}
+                    </h5>
+                    <h6 class="card-price text-center">$</h6>
+                    <hr></hr>
 
-            {/*Package 2*/}
-            <div class="col-lg-4">
-              <div class="card mb-5 mb-lg-0">
-                <div class="card-body">
-                  <h5 class="card-title text-muted text-uppercase text-center">
-                    DJ Package 2
-                  </h5>
-                  <h6 class="card-price text-center">$</h6>
-                  <hr></hr>
-                  <ul class="">
-                    <li>
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 1
-                    </li>
-                    <li>
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 2
-                    </li>
-                    <li>
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 3
-                    </li>
-                    <li>
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 4
-                    </li>
-                    <li class="">
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 5
-                    </li>
-                    <li class="">
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 6
-                    </li>
-                    <li class="text-muted">
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 7
-                    </li>
-                    <li class="text-muted">
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 8
-                    </li>
-                  </ul>
-                  <div class="d-grid">
-                    <a href="#" class="btn btn-primary text-uppercase">
-                      Button
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+                    <ul className="">
+                      {item.features?.map((packageItem, index) => (
+                        <li>
+                          <span class="">
+                            <i class=""></i>
+                          </span>
+                          {packageItem}
+                        </li>
+                      ))}
+                    </ul>
 
-            {/*Package 3*/}
-            <div class="col-lg-4">
-              <div class="card mb-5 mb-lg-0">
-                <div class="card-body">
-                  <h5 class="card-title text-muted text-uppercase text-center">
-                    DJ Package 3
-                  </h5>
-                  <h6 class="card-price text-center">$</h6>
-                  <hr></hr>
-                  <ul class="">
-                    <li>
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 1
-                    </li>
-                    <li>
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 2
-                    </li>
-                    <li>
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 3
-                    </li>
-                    <li>
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 4
-                    </li>
-                    <li class="">
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 5
-                    </li>
-                    <li class="">
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 6
-                    </li>
-                    <li class="">
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 7
-                    </li>
-                    <li class="">
-                      <span class="">
-                        <i class=""></i>
-                      </span>
-                      Service Item 8
-                    </li>
-                  </ul>
-                  <div class="d-grid">
-                    <a href="#" class="btn btn-primary text-uppercase">
-                      Button
-                    </a>
+                    <div class="d-grid">
+                      <a href="#" class="btn btn-primary text-uppercase">
+                        Button
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
         {/*<br></br>
