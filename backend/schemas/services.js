@@ -9,19 +9,24 @@ export default {
       type: "string",
     },
     {
-        name: 'description',
-        title: "Description",
-        type: "string"
+      name: "description",
+      title: "Description",
+      type: "string",
     },
     {
-        title: "Icon",
-        name: "icon",
-        type: "iconPicker",
-        options: {
-          outputFormat: 'react',
-          providers: ["fa", "mdi"]
-      }
+      title: "Icon",
+      name: "icon",
+      type: "iconPicker",
+      options: {
+        outputFormat: "react",
+        providers: ["fa", "mdi"],
+      },
     },
-    
+    {
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
+    },
   ],
 };
