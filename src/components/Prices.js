@@ -10,7 +10,7 @@ const Prices = () => {
     {
       name: "fireworks",
       price: "$ 200 +",
-      description: "Depending how many fireworks(2,4,6)",
+      description: "Depending how many fireworks(2,4,6,8)",
     },
     { name: "Dry ice", price: "$150" },
     { name: "Any custom bogo", price: "$100" },
