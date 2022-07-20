@@ -169,7 +169,7 @@ ul#nav li a:active{
 #contact, #suggest, #prices, #media {
   position: relative;
   //height: 650px;
-  min-height: 200px;
+  min-height: 100vh;
   padding: 50px;
   width: 100%;
   text-align: center;
@@ -579,3 +579,16 @@ body {
 }
 
 
+.media-gallery-container{
+  margin: 0 auto;
+  width: 50%;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.media-img-component{
+  // display: flex;
+  // width: 100px;
+  // height: 100px;
+}
