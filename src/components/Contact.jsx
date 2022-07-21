@@ -18,8 +18,6 @@ export default function Contact(){
             <a href="https://account.venmo.com/pay?txn=pay&note=DJ%20Deposit&recipients=JoeBomm" target="_blank"><img src={PayPal}/></a>
             
             <a href = "https://cash.app/$joebomm" target="_blank"><img src={CashApp}/></a>
-            <div className="col-sm-4">     
-          </div>
         </section>
     )
 }
