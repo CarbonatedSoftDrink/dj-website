@@ -199,24 +199,46 @@ body {
 /* Services Styling */
 .service-item {
   text-align: center;
+  position: relative;
   margin-bottom: 1em;
+  margin-top: 1em;
+  background-color:black;
   margin-left: 0.5em;
   margin-right: 0.5em;
-  height: 25em;
+  height: 12.5em;
   width: 25em;
 }
 
-#service-title {
-  color: black;
-  font-weight: bold;
-  padding-bottom: 1em;
+#service-description{
+  position: absolute;
+  background: black;
+  color: #fff;
+  visibility: hidden;
   padding-top: 1em;
+  padding-bottom: 1em;
+  opacity: 0;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  font-family: 'Inconsolata';
+  font-size: 1.5em;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
 }
 
-#service-description {
-  color: black;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+.service-item:hover #service-description{
+  visibility: visible;
+  opacity: 1;
+}
+
+#service-title {
+  color: white;
+  font-weight: bold;
+  font-family: 'Inconsolata';
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
 
 .container {
@@ -231,12 +253,13 @@ body {
   font-size: 5em;
 }
 
+
 /* End of Services Styling */
 
 /* Packages/Deals Styling */ 
 
 #Packages {
-  background: linear-gradient(#0039e8, #F000EF);
+  background: linear-gradient(#0039e8, #76eb00);
 }
 
 /*#Packages .pricing {
@@ -340,11 +363,24 @@ body {
   margin-bottom: 1.5em;
 }
 
+.contact-item {
+  text-align: center;
+  position: relative;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  background-color:white;
+  margin-left: 1em;
+  margin-right: 1em;
+  height: 25em;
+  width: 23em;
+}
+
 #contact .card {
   border: none;
   border-radius: 1rem;
   transition: all 0.2s;
   text-align: center;
+  padding-bottom: .5em;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -356,7 +392,7 @@ body {
 #deposit-title {
   color: black;
   font-weight: bold;
-  padding-top: .5em;
+  padding-top: .15em;
 }
 
 #contact-name {
@@ -378,7 +414,7 @@ body {
   font-weight: bold;
   padding: 2rem;
   margin: 25px;
-  background-image: linear-gradient(#F000EF, #0039e8);
+  background-image: linear-gradient(#F000EF, #0039e8, #76eb00);
   transition: all 0.2s;
 }
 
@@ -574,8 +610,7 @@ body {
 
 #prices {
   margin-top: 1.5em;
-  background: linear-gradient(
-    #000000,#eb01ef, #0438e8);  
+  background: linear-gradient(#eb01ef, #0438e8);  
 }
 
 
