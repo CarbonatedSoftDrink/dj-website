@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Prices = () => {
   const prices = [
@@ -59,6 +59,23 @@ const Prices = () => {
               </div>
             );
           })}
+          <div className="col-sm-4">
+            <a
+              style={{ color: "white", textDecoration: "none" }}
+              href="#contact"
+            >
+              <button
+                type="button"
+                className="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-bs-whatever="@fat"
+                style={{ marginTop: "30%" }}
+              >
+                More Info
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </section>
