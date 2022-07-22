@@ -18,8 +18,8 @@ export default function Services() {
   const [selectedPackage, setSelectedPackage] = useState("");
 
   useEffect(() => {
-    const servicesQuery = '*[_type == "services"]';
-    const packagesQuery = '*[_type == "packages"]';
+    const servicesQuery = '*[_type == "services"] | order(order asc)';
+    const packagesQuery = '*[_type == "packages"] | order(order asc)';
 
     const fetchServicesData = async () => {
       try {
