@@ -83,13 +83,13 @@ export default function Services() {
             <div class="row justify-content-center">
               {services?.map((service, index) => (
                 <div class="service-item card col-lg-4 col-md-6" key={index}>
-                  <i className="services-img">
-                    <DynamicIcon
-                      iconData={service.icon ? service.icon : null}
-                    />
-                  </i>
-                  <h3 id="service-title">{service.service}</h3>
-                  <p id="service-description">{service.description}</p>
+                    <i className="services-img">
+                      <DynamicIcon
+                        iconData={service.icon ? service.icon : null}
+                      />
+                    </i>
+                    <h3 id="service-title">{service.service}</h3>
+                    <p id="service-description">{service.description}</p>
                 </div>
               ))}
             </div>
