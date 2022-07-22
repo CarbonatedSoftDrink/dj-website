@@ -48,6 +48,7 @@ export default function PackageForm(props) {
             Accept: "application/json",
           },
           body: JSON.stringify({
+            "Package": props.selectedPackage,
             "Event Type": inputs.eventType,
             "Event Size": inputs.partySize,
             "Event Date": inputs.eventDate,
@@ -71,6 +72,7 @@ export default function PackageForm(props) {
       <Toaster></Toaster>
       <div className="package-form-inputs">
         <form className="package-form" onSubmit={handleSubmit}>
+          
           <div className="package-form__group">
             <label className="package-form__label">
               Type of Event

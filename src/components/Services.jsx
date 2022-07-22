@@ -15,6 +15,7 @@ export default function Services() {
   const [services, setServices] = useState([]);
   const [packages, setPackages] = useState([]);
   const [showModal, setShowModal] = useState(false);
+  const [selectedPackage, setSelectedPackage] = useState("");
 
   useEffect(() => {
     const servicesQuery = '*[_type == "services"]';
@@ -58,7 +59,7 @@ export default function Services() {
             closeButton={() => setShowModal(false)}
           >
             <Modal.Title id="contained-modal-title-vcenter">
-              Package number..
+              {selectedPackage}
             </Modal.Title>
           </Modal.Header>
           <ModalBody>
@@ -69,6 +70,7 @@ export default function Services() {
             </p>
             <PackageForm
               closeAfterSubmit={() => setShowModal(false)}
+              selectedPackage={selectedPackage}
             ></PackageForm>
           </ModalBody>
           <Modal.Footer>
@@ -123,8 +125,13 @@ export default function Services() {
                     </ul>
 
                     <div class="d-grid">
-                      <a href="#" class="btn btn-primary text-uppercase">
-                        Button
+                      <a onClick={() => {
+                        
+                        setShowModal(true);
+                        setSelectedPackage(item.package)
+                        
+                        }} class="btn btn-primary text-uppercase">
+                        Contact
                       </a>
                     </div>
                   </div>
