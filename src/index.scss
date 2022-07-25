@@ -169,10 +169,12 @@ ul#nav li a:active{
 #contact, #suggest, #prices, #media {
   position: relative;
   //height: 650px;
-  min-height: 100vh;
+  min-height: 200px;
   padding: 50px;
   width: 100%;
   text-align: center;
+
+  max-height: 100vh;
 }
 
 #services{
