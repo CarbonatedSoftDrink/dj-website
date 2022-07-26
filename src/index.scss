@@ -173,6 +173,8 @@ ul#nav li a:active{
   padding: 50px;
   width: 100%;
   text-align: center;
+
+  max-height: 100vh;
 }
 
 #services{
@@ -614,3 +616,16 @@ body {
 }
 
 
+.media-gallery-container{
+  margin: 0 auto;
+  width: 50%;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.media-img-component{
+  // display: flex;
+  // width: 100px;
+  // height: 100px;
+}
