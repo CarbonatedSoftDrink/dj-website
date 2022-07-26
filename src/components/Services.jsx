@@ -122,6 +122,7 @@ export default function Services() {
                           {packageItem}
                         </li>
                       ))}
+                      <li class="text-muted">Disabled Service</li>
                     </ul>
 
                     <div class="d-grid">
