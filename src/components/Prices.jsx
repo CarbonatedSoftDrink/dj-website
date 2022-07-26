@@ -1,33 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { client } from "../client";
 
 const Prices = () => {
-  const prices = [
-    {
-      name: "DJ Only",
-      price: "$400 - 750",
-      description: "Price may vary depending on location and type of event",
-    },
-    {
-      name: "fireworks",
-      price: "$ 200 +",
-      description: "depeding how many fireworks(2,4,6,8)",
-    },
-    { name: "Dry ice", price: "$150" },
-    { name: "Any custom bogo", price: "$100" },
-    {
-      name: "Rental speakers",
-      price: [
-        {
-          name: "Small system",
-          price: "$250",
-        },
-        {
-          name: "Large system",
-          price: "$450",
-        },
-      ],
-    },
-  ];
+  const [prices, setPrices] = useState([]);
+
+  useEffect(() => {
+    const pricesQuery = '*[_type == "prices"] | order(order asc)';
+
+    const fetchPricesData = async () => {
+      try {
+        const data = await client.fetch(pricesQuery);
+        setPrices(data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+
+    fetchPricesData();
+  }, []);
 
   return (
     <section id="prices">
@@ -40,7 +30,7 @@ const Prices = () => {
           {prices.map((price, index) => {
             return (
               <div key={index} className="col-sm-4 my-4">
-                <h1 className="text-uppercase m-2">{price.name}</h1>
+                <h1 className="text-uppercase m-2">{price.item}</h1>
                 {typeof price.price === "string" ? (
                   <p className="fs-5 m-2">{price.price}</p>
                 ) : (
