@@ -21,7 +21,7 @@ const Prices = () => {
 
   return (
     <section id="prices">
-      <h1>Price Style</h1>
+      <h1>Prices</h1>
       <br />
       <br />
       <br />
