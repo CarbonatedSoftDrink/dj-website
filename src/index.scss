@@ -293,6 +293,12 @@ body {
   height: 27em;
 }
 
+#Packages .card-body {
+  /*for fixed placement of contact button */
+  display: flex;
+  flex-direction: column;
+}
+
 #Packages hr {
   margin: 1.5rem 0;
 }
@@ -337,6 +343,11 @@ body {
   padding: 1rem;
   opacity: 0.7;
   transition: all 0.2s;
+}
+
+/*Fixed height on contact buttom */
+#Packages .d-grid {
+  margin-top: auto;
 }
 
 /* Hover Effects on Card */
