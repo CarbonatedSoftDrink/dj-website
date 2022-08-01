@@ -26,6 +26,7 @@ export default function Footer() {
         <ul className="footer-navigation__list" >
             <li className="footer-navigation__item"><a href="/#home" className="footer-navigation__link">HOME</a></li>
             <li className="footer-navigation__item"><a href="/#services" className="footer-navigation__link">SERVICES</a></li>
+            <li className="footer-navigation__item"><a href="/#prices" className="footer-navigation__link">PRICES + PACKAGES</a></li>
             <li className="footer-navigation__item"><a href="/#media" className="footer-navigation__link">MEDIA</a></li>
             <li className="footer-navigation__item"><a href="/#suggest" className="footer-navigation__link">SONG SUGGESTION</a></li>
             <li className="footer-navigation__item"><a href="/#contact" className="footer-navigation__link">CONTACT</a></li>
