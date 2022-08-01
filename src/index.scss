@@ -24,7 +24,7 @@
 }
 
 html{
-  font-size: 62.5%;;
+  font-size: 80%;
   /* We want 10px as root font size.. it's 16px by default
   Change to 62.5% to get 10px  */
   // ^^ Defines that 1rem = 10px for easy math
@@ -33,13 +33,13 @@ html{
       font-size: 56.25%;  //1rem = 9px, 9/16 = 56.25%
   }
 
-  @include respond(tab-port){ // width < 900?
-      font-size: 50%; // //1rem = 8px, 8/16 = 50%
-  }
+  // @include respond(tab-port){ // width < 900?
+  //     font-size: 50%; // //1rem = 8px, 8/16 = 50%
+  // }
 
-  @include respond(big-desktop){
-      font-size: 75%; //1rem = 12px, 12/16 = 75%
-  }
+  // @include respond(big-desktop){
+  //     font-size: 75%; //1rem = 12px, 12/16 = 75%
+  // }
 
 }
 
@@ -294,6 +294,7 @@ body {
   transition: all 0.2s;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   min-height: 28rem;
+  margin-top: 2rem;
 }
 
 #Packages .card-body {
@@ -357,8 +358,6 @@ body {
 
 @media (min-width: 992px) {
   #Packages .card:hover {
-    margin-top: -.25rem;
-    margin-bottom: .25rem;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
   }
 
@@ -678,6 +677,17 @@ body {
   background: linear-gradient(#eb01ef, #0438e8);  
 }
 
+#prices .prices-button {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#prices button {
+  color: black;
+  background-color: white;
+}
 
 .media-gallery-container{
   margin: 0 auto;

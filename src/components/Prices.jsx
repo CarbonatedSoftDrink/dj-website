@@ -52,9 +52,10 @@ const Prices = () => {
               </div>
             );
           })}
-          <div className="col-sm-4">
+        </div>
+
+        <div className="prices-button">
             <a
-              style={{ color: "white", textDecoration: "none" }}
               href="#contact"
             >
               <button
@@ -63,13 +64,11 @@ const Prices = () => {
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
                 data-bs-whatever="@fat"
-                style={{ marginTop: "30%" }}
               >
                 More Info
               </button>
             </a>
           </div>
-        </div>
       </div>
     </section>
   );
