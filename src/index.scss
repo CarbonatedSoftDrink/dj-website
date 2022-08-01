@@ -89,6 +89,9 @@ header .banner-text h1 {
 	 padding: 0;
 	 outline: none;
 }
+#prices {
+  font-size: 1.6rem;
+}
 
 /* nav-wrap */
 #nav-wrap {
@@ -305,7 +308,7 @@ body {
 
 #Packages .card-title {
   margin: 0.5rem 0;
-  font-size: 0.9rem;
+  font-size: 1.8rem;
   letter-spacing: .1rem;
   font-weight: bold;
 }
@@ -484,8 +487,6 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #212121;
-
-
 }
 
 .package-form-inputs{
