@@ -10,11 +10,9 @@ export default function Footer() {
 
       >
         <div className="footer__about-text">
-          <h2 className="footer__about-h2">@First_Last</h2>
+          <h2 className="footer__about-h2">@DJ_FADIA</h2>
           <h3 className="footer__about-h3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce augue
-            dui, tincidunt ut tempus a, volutpat eget mi. Sed ac mattis metus.
-            Curabitur non urna ac magna faucibus vulputate quis et dui.
+            Providing DJ services since 2016.
           </h3>
         </div>
 
@@ -35,7 +33,7 @@ export default function Footer() {
 
         <div className="footer__hr" />
 
-        <p className="footer__legal">@First_Last. All rights reserved.</p>
+        <p className="footer__legal">© 2022 djfadia.com</p>
 
       </div>
     </section>
