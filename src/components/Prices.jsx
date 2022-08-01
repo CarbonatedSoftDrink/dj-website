@@ -22,6 +22,7 @@ const Prices = () => {
   return (
     <section id="prices">
       <h1>Prices</h1>
+      <h3>May vary by location</h3>
       <br />
       <br />
       <br />
