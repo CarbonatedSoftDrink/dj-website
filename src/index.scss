@@ -293,7 +293,7 @@ body {
   border-radius: 1rem;
   transition: all 0.2s;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-  height: 27em;
+  min-height: 28rem;
 }
 
 #Packages .card-body {
@@ -314,7 +314,7 @@ body {
 }
 
 #Packages .card-price {
-  font-size: 3rem;
+  font-size: 2.0rem;
   margin: 0;
 }
 
