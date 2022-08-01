@@ -22,6 +22,7 @@ const Prices = () => {
   return (
     <section id="prices">
       <h1>Prices</h1>
+      <h3>May vary by location</h3>
       <br />
       <br />
       <br />
@@ -39,7 +40,9 @@ const Prices = () => {
                       return (
                         <div className="mx-2">
                           <p className="mb-1">{p.name}</p>
-                          <p>{p.price}</p>
+                          <div id="price">
+                            <p>{p.price}</p>
+                          </div>
                         </div>
                       );
                     })}
