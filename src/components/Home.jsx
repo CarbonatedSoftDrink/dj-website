@@ -13,7 +13,7 @@ class Home extends Component {
                     <ul id="nav" className="nav">
                         <li className="current"><a className="smoothscroll" href="#home">Home   </a></li>
                         <li><a className="smoothscroll" href="#services">Services   </a></li>
-                        <li><a classname="smooothscroll" href="#Packages">Prices and Packages</a></li>
+                        <li><a classname="smooothscroll" href="#prices">Prices + Packages</a></li>
                         <li><a className="smoothscroll" href="#media">Media </a></li>
                         <li><a className="smoothscroll" href="#suggest">Song Suggestion </a></li>
                         <li><a className="smoothscroll" href="#contact">Contact Us</a></li>
