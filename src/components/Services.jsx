@@ -107,10 +107,10 @@ export default function Services() {
               <div class="col-lg-4 package">
                 <div class="card mb-5 mb-lg-0">
                   <div class="card-body">
-                    <h5 class="card-title text-muted text-uppercase text-center">
+                    <h6 class="card-title text-uppercase text-center card-price">
                       {item.package}
-                    </h5>
-                    <h6 class="card-price text-center">$</h6>
+                    </h6>
+                    {/* <h6 class="card-price text-center">$</h6> */}
                     <hr></hr>
 
                     <ul className="">
