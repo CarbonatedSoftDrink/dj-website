@@ -366,6 +366,13 @@ body {
   }
 }
 
+/* Packages media query for services text on mobile */
+@media only screen and (max-width: 1200px) {
+  #Packages .card ul {
+    font-size: 1.25em;
+  }
+}
+
 /* End of Packages/Deals Styling */ 
 
 
