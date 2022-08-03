@@ -38,7 +38,7 @@ export default function SongSubmission(){
     const sendForm = async () => {
         try {
           const fetchData = await fetch(
-            "https://formsubmit.co/ajax/djfadiawebsite@gmail.com",
+            "https://formsubmit.co/ajax/e6d5ab319530c607a40d9dee7541426d",
             {
               method: "POST",
               headers: {

@@ -40,7 +40,7 @@ export default function PackageForm(props) {
   const sendForm = async () => {
     try {
       const fetchData = await fetch(
-        "https://formsubmit.co/ajax/someemailaddress.com",
+        "https://formsubmit.co/ajax/e6d5ab319530c607a40d9dee7541426d",
         {
           method: "POST",
           headers: {
